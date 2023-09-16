@@ -1,0 +1,11 @@
+<div class="mt-3">
+  <h2>Signal Example</h2>
+  <button (click)="increment()" class="btn btn-secondary">
+    Increment Count
+  </button>
+  <button (click)="decrement()" class="btn btn-secondary">
+    Decrement Count
+  </button>
+  <p>Item: {{ signalCount() }}</p>
+  <p>Dependent Value: {{ signalDependent() }}</p>
+</div>
