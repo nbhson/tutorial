@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "21-angular-signals": {
+    "1-angular-signals": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/21-angular-signals",
+            "outputPath": "dist/1-angular-signals",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -56,7 +56,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -65,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "21-angular-signals:build:production"
+              "browserTarget": "1-angular-signals:build:production"
             },
             "development": {
-              "browserTarget": "21-angular-signals:build:development"
+              "browserTarget": "1-angular-signals:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "21-angular-signals:build"
+            "browserTarget": "1-angular-signals:build"
           }
         },
         "test": {
