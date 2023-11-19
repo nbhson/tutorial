@@ -5,10 +5,10 @@ import { SignalTypeRoutingModule } from './signal-type-routing.module';
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    SignalTypeRoutingModule,
-  ],
-  declarations: [SignalTypesComponent]
+    imports: [
+        CommonModule,
+        SignalTypeRoutingModule,
+        SignalTypesComponent,
+    ]
 })
 export class SignalTypesModule { }

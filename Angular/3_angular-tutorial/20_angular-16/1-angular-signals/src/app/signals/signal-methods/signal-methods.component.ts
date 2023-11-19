@@ -27,7 +27,14 @@ export class SignalMethodsComponent implements OnInit {
 
   ngOnInit() {
     this.quantity.update((currentValue) => currentValue * 2) // default: 2
-    this.selectedVehicle.mutate(v => v.price = v.price + (v.price * .2)) // default price
+    // this.selectedVehicle.mutate(v => v.price = v.price + (v.price * .2)) // default price
+    this.selectedVehicle.update(pre => {
+      return {
+        id: pre.id,
+        name: pre.name,
+        price: pre.price = pre.price + (pre.price * .2)
+      }
+    }) // default price
   }
 
   onQuantityChanges(qty: number) {

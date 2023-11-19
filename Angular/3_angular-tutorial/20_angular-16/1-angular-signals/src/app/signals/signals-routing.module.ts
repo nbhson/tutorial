@@ -4,6 +4,7 @@ import { SignalsComponent } from './signals.component';
 import { GetterChangesComponent } from './getter-changes/getter-changes.component';
 import { SimpleSignalsComponent } from './simple-signals/simple-signals.component';
 import { SignalMethodsComponent } from './signal-methods/signal-methods.component';
+import { RxjsInteroperabilityComponent } from './rxjs-interoperability/rxjs-interoperability.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'signal-methods',
         component: SignalMethodsComponent,
+      },
+      {
+        path: 'rxjs-interoperability',
+        component: RxjsInteroperabilityComponent,
       },
     ]
   },

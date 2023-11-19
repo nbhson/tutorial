@@ -13,8 +13,8 @@
 <hr>
 
 <div>Vehicle: {{ selectedVehicle().name}}</div>
-<div>Price: {{ selectedVehicle().price | number: '1.2-2'}}</div>
-<div style="font-weight: bold" [style.color]="color()">Total: {{ exPrice() | number: '1.2-2' }}</div>
+<div>Price: {{ selectedVehicle().price }}</div>
+<div style="font-weight: bold" [style.color]="color()">Total: {{ exPrice()  }}</div>
 <!--<div *ngFor="let v of vehicles()">
   {{ v.name }}
 </div> -->

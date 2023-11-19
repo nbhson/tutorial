@@ -18,4 +18,7 @@ export class GetterChangesComponent implements OnInit {
     this.cartService.price = this.inputElementRef.nativeElement.value;
   }
 
+  get price() {
+    return this.cartService.exPrice;
+  }
 }

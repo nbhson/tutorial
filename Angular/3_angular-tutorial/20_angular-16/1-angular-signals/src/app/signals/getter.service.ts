@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -12,5 +13,9 @@ export class CartService {
 
   get exPrice() {
     return this.price * this.quantity;
+  }
+
+  getName() {
+    return of(this.item);
   }
 }
