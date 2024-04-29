@@ -15,3 +15,5 @@
 !['cherry pick 2'](../img/crp-2.png)
 
 
+> cherry-pick 1 commit thì lấy đúng hash code của commit đó
+> cherry-pick nhiều commit thì lấy hash code của commit trước đó
